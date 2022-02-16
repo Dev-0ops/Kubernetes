@@ -5,8 +5,8 @@ metadata:
   labels:
     app: nginx
   annotations:
-    manager: "myadmin"
-    contact: "010-0000-0000"
+    manager: "Yoon-CHANWOO"
+    contact: "010-1234-5678"
     release-version: "v1.0"
 spec:
   replicas: 1
