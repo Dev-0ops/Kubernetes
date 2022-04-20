@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-server
+spec:
+  selector:
+    matchLabels:
+      app: web-store
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: web-store
+    spec:
+      containers:
+      - name: web-app
+        image: nginx:1.12-alpine
+      nodeSelector:
+        disktype: ssh
+
